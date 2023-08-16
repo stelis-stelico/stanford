@@ -1,0 +1,14 @@
+.link-with-divider {
+    position: relative;
+  }
+
+  .link-with-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust this value to control the distance between the line and the text */
+    width: 2px;
+    height: 100%;
+    background-color: black;
+  }
+

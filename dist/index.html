@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanford</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f0f3df495e.js" crossorigin="anonymous"></script>
+
+    <script>
+        window.onload = () => {
+            const mobileMenuIcon = document.getElementById("mobile-menu-button");
+            mobileMenuIcon.addEventListener("click", () => {
+                if (mobileMenuIcon.classList.contains("open")) {
+                    mobileMenuIcon.classList.remove("open");
+                } else {
+                    mobileMenuIcon.classList.add("open");
+                }
+            });
+
+        };
+                
+    </script>
+</head>
+<body>
+    <main>
+        <!-- Header & NAVBAR -->
+        <div class="">
+            <header style="background-image: url(./img/header-bg2.webp);" class="text-white bg-cover bg-center bg-fixed h-[calc(100vh-200px)] min-h-[600px]">
+
+                <div class="lg:hidden flex sticky px-2 bg-custom-red items-center">
+                    <div class="cursor-pointer text-custom-size font-semibold">Stanford</div>
+                    <div class="flex justify-end text-navbar-size flex-1 gap-3 font-semibold items-center">
+                        <div class="gap-3 hover:bg-menu-bg h-full items-center p-4 relative cursor-pointer">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Search</span>
+                        </div>
+
+                        <div id="mobile-menu-button" class="group peer flex h-full items-center p-4 relative cursor-pointer gap-3 hover:bg-menu-bg">
+                                <div>
+                                    <div class="bg-white rounded-full w-6 h-[4px] group-open:rotate-45 transition-all group-open:top-2 relative top-0"></div>
+                                    <div class="bg-white rounded-full w-6 h-[4px] mt-1 group-open:opacity-0 opacity-100 transition-all"></div>
+                                    <div class="bg-white rounded-full w-6 h-[4px] mt-1 group-open:-rotate-45 transition-all group-open:-top-2 relative top-0"></div>
+                                </div>
+
+                                <div>
+                                    <span>Menu</span>
+                                </div>
+                        </div>
+                        <div class="absolute top-[50px] bg-gray-100 w-full left-0 peer-open:block hidden">
+                            <div class="grid grid-cols-2">
+                                <div class="menu-items-mobile">
+                                    <span>Home</span>
+                                </div>
+                                <div class="menu-items-mobile">
+                                    <span>Lineups</span>
+                                </div>
+                                <div class="menu-items-mobile">
+                                    <span>Support</span>
+                                </div>
+                                <div class="menu-items-mobile ">
+                                    <span>Home</span>
+                                </div>
+                                <div class="menu-items-mobile">
+                                    <span>Lineups</span>
+                                </div>
+                                <div class="menu-items-mobile">
+                                    <span>Support</span>
+                                </div>
+                                <div class="menu-items-mobile">
+                                    <span>Home</span>
+                                </div>
+                                <div class="menu-items-mobile">
+                                    <span>Lineups</span>
+                                </div>
+                            </div>
+
+                            <div class="text-black text-center mt-2">
+                                <p>information for:</p>
+                                <div class="flex cursor-pointer justify-around font-light">
+                                    <div class="hover:text-custom-red hover:bg-white h-full p-3 relative">Students</div>
+                                    <div class="hover:text-custom-red hover:bg-white h-full p-3 relative">Faculty & Staff</div>
+                                    <div class="hover:text-custom-red hover:bg-white h-full p-3 relative">Families</div>
+                                    <div class="hover:text-custom-red hover:bg-white h-full p-3 relative">Visitors</div>
+                                    <div class="hover:text-custom-red hover:bg-white h-full p-3 relative">Alumni</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                    <nav class="sticky lg:flex hidden p-4 bg-gradient-to-b from-black via-black to-transparent">
+                        <div class="cursor-pointer font-bold text-2xl ">
+                                Stanford University
+                        </div>
+                        <div class="flex justify-end flex-1 gap-4 font-semibold">
+                            <div class="font-bold">Information for:</div>
+                            <div class="cursor-pointer">
+                                <span>Students</span>
+                            </div>
+                            <div class="cursor-pointer">
+                                 <span>Faculty & Staff</span>
+                            </div>
+                            <div class="cursor-pointer">
+                                <span>Families</span>
+                            </div>
+                            <div class="cursor-pointer">
+                                <span>Visitors</span>
+                            </div>
+                            <div class="cursor-pointer">
+                                <span>Alumni</span>
+                            </div>
+                            <div class="gap-3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>Search</span>
+                            </div>
+                        </div>
+                    </nav>
+                    
+                    <div class="lg:flex hidden font-bold text-2xl gap-7 justify-center cursor-pointer">
+                        <div>News</div>
+                        <div>Events</div>
+                        <div>Academics</div>
+                        <div>Research</div>
+                        <div>Health Care</div>
+                        <div>Campus Life</div>
+                        <div>Admission</div>
+                        <div>About</div>
+                    </div>
+                
+                <div class="items-center justify-center flex font-bold lg:text-9xl text-6xl lg:mt-40 mt-56">Stanford</div>
+
+                
+            </header>
+        </div>
+        
+
+        <!-- Explore -->
+        <div class="flex text-white bg-custom-red items-center justify-center font-bold text-xl p-2 gap-4 cursor-pointer">
+            <span>Explore Stanford</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <!-- More -->
+        <div class="py-20 px-3 text-center">
+            <h1 class="font-bold text-5xl mb-3">A Purposeful University</h1>
+            <p class="py-6 text-3xl font-light">Stanford was founded almost 150 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating students for lives of leadership and purposeful contribution; advancing fundamental knowledge and cultivating creativity; and accelerating solutions and amplifying their impact.</p>
+            <button class="cursor-pointer bg-custom-red mt-8 py-2 px-24 hover:bg-btn-bg text-white text-2xl">More about Stanford</button>
+        </div>
+
+        <!-- Campus News -->
+        <section class="py-20 px-3 text-center bg-campus-news-bg">
+            <h1 class="font-bold text-5xl mb-3">Campus News</h1>
+            <p class="py-6 text-3xl font-normal">Stories about people, research, and innovation across the Farm</p>
+
+            <div class="md:grid grid-cols-3 gap-5 sm:py-4">
+                <div>
+                    <img src="./img/campus-img1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/campus-img2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/campus-img3.jpg" alt="">
+                </div>  
+            </div>
+
+            <button class="cursor-pointer bg-custom-red mt-8 py-2 px-24 hover:bg-btn-bg text-white text-2xl">More Campus News</button>
+        </section>
+
+        <!-- Academics -->
+        <section class="py-20 px-3 text-center bg-white">
+            <h1 class="font-bold text-5xl mb-3">Academics</h1>
+            <p class="py-6 text-3xl font-normal">Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world</p>
+
+            <div class="md:grid grid-cols-3 gap-5 p-5 text-left sm:py-4">
+                <div class="">
+                    <img src="./img/acad1.webp" alt="">
+                    <h1 class="font-bold text-2xl">Undergraduate Education</h1>
+                    <p class="text-1xl py-4 font-medium">Rich learning experiences that provide a broad liberal arts foundation and deep subject-area expertise</p>
+                    <a href="" class="text-link-color font-medium hover:underline">Undergraduate Education</a>
+                </div>
+                <div>
+                    <img src="./img/acad2.webp" alt="">
+                    <h1 class="font-bold text-2xl">Driving impact</h1>
+                    <p class="text-1xl py-4 font-medium">Continuing adult education, executive and professional programs, and programs for K-12 students</p>
+                    <a href="" class="text-link-color font-medium hover:underline">Lifelong learning</a>
+                </div>
+                <div>
+                    <img src="./img/acad3.webp" alt="">
+                    <h1 class="font-bold text-2xl">Graduate Education</h1>
+                    <p class="text-1xl py-4 font-medium">Unsurpassed opportunities to participate in the advancement of entire fields of knowledge</p>
+                    <a href="" class="text-link-color font-medium hover:underline">Graduate Education</a>
+                </div>
+                
+            </div>
+
+            <div class="py-10 mt-11">
+                <h1 class="text-3xl font-bold">Seven schools in which to pursue your passions</h1>
+                <div class="lg:flex hidden justify-center mt-4 gap-8 text-link-color text-custom-size font-medium">
+                    <a href="">Medicine</a>
+                    <a href="" class="link-with-divider">Law</a>
+                    <a href="" class="link-with-divider">Humanities & Sciencies</a>
+                    <a href="" class="link-with-divider">Engineering</a>
+                    <a href="" class="link-with-divider">Education</a>
+                    <a href="" class="link-with-divider">Sustainability</a>
+                    <a href="" class="link-with-divider">Business</a>
+                </div>
+            </div>
+              
+            <button class="cursor-pointer bg-custom-red mt-8 py-2 px-24 hover:bg-btn-bg text-white text-2xl">More Campus News</button>
+
+        </section>
+
+        <!-- Mid-Section -->
+        <section class="text-center py-10">
+            <img src="./img/full-w.webp" class="w-full py-4" alt="">
+
+            <div class="py-6">
+                <h1 class="font-bold text-5xl">Research</h1>
+                <p class="text-2xl py-4">Driving discoveries vital to our world, our health, and our intellectual life</p>
+            </div>
+
+            <hr class="mt-4 mx-10 border-black">
+
+            <div class="grid grid-cols-3 gap-6 py-8">
+                <div>
+                    <h1 class="font-bold text-3xl">15 Institutes</h1>
+                    <p class="text-2xl">cross disciplinary boundaries</p>
+                </div>
+                <div>
+                    <h1 class="font-bold text-3xl">20 Libraries</h1>
+                    <p class="text-2xl">hold over 12 million items</p>
+                </div>
+                <div>
+                    <h1 class="font-bold text-3xl">$1.82 Billion</h1>
+                    <p class="text-2xl">sponsored research budget</p>
+                </div>
+            </div>
+            <hr class="mx-10 border-black">
+
+            <button class="cursor-pointer bg-custom-red mt-11 py-2 px-24 hover:bg-btn-bg text-white text-2xl">More about research</button>
+    
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="text-center bg-campus-news-bg py-10">
+            <h1 class="font-bold text-5xl py-8">Upcoming Events</h1>
+            <button class="cursor-pointer bg-custom-red mt-11 py-2 px-24 hover:bg-btn-bg text-white text-2xl">More events</button>
+        </section>
+
+                <!-- Academics -->
+                <section class="py-20 px-3 text-center bg-white">
+                    <h1 class="font-bold text-5xl mb-3">Health Care</h1>
+                    <p class="py-6 text-3xl font-normal">Advancing human health through innovative research, education, and care</p>
+        
+                    <div class="md:grid grid-cols-3 gap-6 p-6 text-left sm:py-4">
+                        <div class="">
+                            <img src="./img/Health-care-1.webp" alt="">
+                            <h1 class="font-bold text-2xl">Stanford Medicine</h1>
+                            <p class="text-1xl py-4 font-medium">Leading a worldwide revolution in precision health through biomedical research, education, and clinical enterprises</p>
+                            <a href="" class="text-link-color font-medium hover:underline">Standford Medicine</a>
+                        </div>
+                        <div>
+                            <img src="./img/Health-care-2.jpg" alt="">
+                            <h1 class="font-bold text-2xl">Standford Healthcare</h1>
+                            <p class="text-1xl py-4 font-medium">Leveraging expertise and advanced technology  to deliver unparalleled care for each patient’s unique needs</p>
+                            <a href="" class="text-link-color font-medium hover:underline">Standford Healthcare</a>
+                        </div>
+                        <div>
+                            <img src="./img/Health-care-3.webp" alt="">
+                            <h1 class="font-bold text-2xl">Standford Children's Health</h1>
+                            <p class="text-1xl py-4 font-medium">The only health care network in the Bay Area – and one of the few in the country – exclusively dedicated to pediatric and obstetric care</p>
+                            <a href="" class="text-link-color font-medium hover:underline">Standford Children's Health</a>
+                        </div>
+                        
+                    </div>
+                      
+                    <button class="cursor-pointer bg-custom-red mt-8 py-2 px-24 hover:bg-btn-bg text-white text-2xl">More about health care</button>
+        
+                </section>
+
+
+    </main>
+    
+</body>
+</html>
